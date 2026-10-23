@@ -1,0 +1,38 @@
+# .github/workflows/release.yml
+#
+# Tag push → zip each skill (with plugin manifests + MCP definition) →
+# GitHub Release. Actions are pinned to commit SHAs — never moving tags.
+
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      # actions/checkout v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+
+      - name: Zip each plugin
+        run: |
+          mkdir -p dist
+          for dir in skills/*/; do
+            name=$(basename "$dir")
+            zip -r "dist/${name}.zip" .claude-plugin .mcp.json "skills/${name}"
+          done
+
+      # softprops/action-gh-release v2
+      - name: Create release and upload assets
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65
+        with:
+          files: dist/*.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

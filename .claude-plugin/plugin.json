@@ -1,0 +1,12 @@
+{
+  "name": "apecs",
+  "description": "Build on APECS Dev — a permissionless multi-chain platform for P2P electronic cash Builders: 10 chain Workspaces, Sandbox experiments, SIWE connect hub, MCP server, ads auction and sponsors",
+  "version": "1.0.0",
+  "author": {
+    "name": "APECS Dev"
+  },
+  "homepage": "https://apecs.dev",
+  "repository": "https://github.com/APECSdev/agents",
+  "license": "MIT",
+  "keywords": ["apecs", "bitcoin-cash", "ecash", "monero", "multi-chain", "p2p-electronic-cash", "siwe", "mcp", "builders"]
+}

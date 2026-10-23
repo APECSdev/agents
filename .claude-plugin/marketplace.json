@@ -1,0 +1,21 @@
+{
+  "name": "apecs-skills",
+  "owner": {
+    "name": "APECS Dev"
+  },
+  "metadata": {
+    "description": "Agent skill and bundled MCP connector for building on APECS Dev, the permissionless multi-chain platform for P2P electronic cash Builders",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "apecs",
+      "description": "Build on APECS Dev — 10 chain Workspaces, Sandbox experiments, SIWE connect hub, ads auction and sponsors (bundled MCP connector)",
+      "source": "./",
+      "homepage": "https://apecs.dev",
+      "repository": "https://github.com/APECSdev/agents",
+      "keywords": ["apecs", "bitcoin-cash", "ecash", "monero", "multi-chain", "p2p-electronic-cash", "siwe", "mcp"],
+      "category": "development"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "apecs": {
+      "type": "http",
+      "url": "https://mcp.apecs.dev/mcp",
+      "placement": "server"
+    }
+  }
+}
