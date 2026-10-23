@@ -1,12 +1,15 @@
 # APECS MCP server
 
-Endpoint: `https://mcp.apecs.dev/mcp` — Model Context Protocol over streamable
+Endpoint: `https://apecs.dev/mcp` — Model Context Protocol over streamable
 HTTP (POST JSON-RPC 2.0, `application/json` responses; no batching, no SSE).
-GET returns 405 with a pointer to the human guide at `https://apecs.dev/mcp`.
+One URL, both audiences: POST speaks JSON-RPC; GET serves the human landing
+page (`pages/mcp.vue` in the apecs.dev repo).
 
-Source + deploy: private `APECSdev/mcp` repo (Cloudflare Worker, route
-`mcp.apecs.dev/*` on the apecs.dev zone). This repo bundles it for MCP clients
-via the root [`.mcp.json`](../../../.mcp.json).
+Source: `server/routes/mcp.post.ts` in the `APECSdev/apecs.dev` repo (Nitro
+server route, ships with the SSR deployment). This repo bundles it for MCP
+clients via the root [`.mcp.json`](../../../.mcp.json). (History: began as a
+Cloudflare Worker at `mcp.apecs.dev` in `APECSdev/mcp`; the subdomain was
+decommissioned 2026-10-23.)
 
 ## Client registration
 
@@ -16,7 +19,7 @@ plugin's `.mcp.json`. Manual/generic clients:
 ```json
 {
   "mcpServers": {
-    "apecs": { "type": "http", "url": "https://mcp.apecs.dev/mcp" }
+    "apecs": { "type": "http", "url": "https://apecs.dev/mcp" }
   }
 }
 ```
@@ -33,7 +36,7 @@ plugin's `.mcp.json`. Manual/generic clients:
 ## Smoke test
 
 ```bash
-curl -s -X POST https://mcp.apecs.dev/mcp \
+curl -s -X POST https://apecs.dev/mcp \
   -H 'content-type: application/json' \
   -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}'
 # expect: result.serverInfo.name == "apecs-mcp"

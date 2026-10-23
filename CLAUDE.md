@@ -19,7 +19,7 @@ This repository is a monorepo of agent skills for APECS Dev, packaged as a **Cla
 /reload-plugins
 ```
 
-Bundled **APECS MCP** ([`.mcp.json`](.mcp.json), `https://mcp.apecs.dev/mcp`). Pin: `APECSdev/agents@v1.0.0`.
+Bundled **APECS MCP** ([`.mcp.json`](.mcp.json), `https://apecs.dev/mcp`). Pin: `APECSdev/agents@v1.0.0`.
 
 ### Claude Cowork / Cursor
 

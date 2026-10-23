@@ -18,7 +18,7 @@ Routes by **task → touchpoint**:
 | --- | --- | --- |
 | Any chain-specific work | Fetch `https://apecs.dev/<chain>/SKILL.md` (live, current) | [references/workspaces.md](references/workspaces.md) |
 | Connect a wallet / sign in | `/connect` hub — SIWE (EIP-4361) live | [references/connect.md](references/connect.md) |
-| Use APECS from an MCP client | Bundled connector `https://mcp.apecs.dev/mcp` (`.mcp.json`) | [references/mcp.md](references/mcp.md) |
+| Use APECS from an MCP client | Bundled connector `https://apecs.dev/mcp` (`.mcp.json`) | [references/mcp.md](references/mcp.md) |
 | Run an experiment / prototype | Sandbox (21 experiments) | [references/sandbox.md](references/sandbox.md) |
 | Advertise on APECS | Uniform-price ads auction | [references/ads.md](references/ads.md) |
 | Support the platform | Crypto-only sponsorship (BCH, XMR) | [references/sponsors.md](references/sponsors.md) |

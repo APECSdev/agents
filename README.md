@@ -47,7 +47,7 @@ npx skills add APECSdev/agents
 ```json
 {
   "mcpServers": {
-    "apecs": { "type": "http", "url": "https://mcp.apecs.dev/mcp" }
+    "apecs": { "type": "http", "url": "https://apecs.dev/mcp" }
   }
 }
 ```
