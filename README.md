@@ -1,6 +1,6 @@
 # APECS Dev Agent Skills
 
-The agent skill for [APECS Dev](https://apecs.dev) — a permissionless, multi-chain platform for P2P electronic cash Builders. Enables AI agents to discover and work with the 10 chain Workspaces (Avalanche, Binance Smart Chain, Bitcoin, Bitcoin Cash, Dash, eCash, Ethereum, Monero, Nexa, Tron), the Sandbox experiments, the `/connect` SIWE wallet hub, the APECS MCP server, the ads auction and the crypto-only sponsor program. Agent Skills spec compliant. Works with Claude Code, Cursor, `npx skills`.
+The agent skill for [APECS Dev](https://apecs.dev) — a permissionless, multi-chain platform for P2P electronic cash Builders, focused on UTXO-based networks. Enables AI agents to discover and work with the 10 chain Workspaces (Akash, Avalanche, Bitcoin, Bitcoin Cash, Dash, eCash, Flux, Monero, Nexa, RISCy), the Sandbox experiments, the `/connect` SIWE wallet hub, the APECS MCP server, the ads auction and the crypto-only sponsor program. Agent Skills spec compliant. Works with Claude Code, Cursor, `npx skills`.
 
 ## Status
 
