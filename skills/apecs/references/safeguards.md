@@ -17,5 +17,8 @@ State these exactly; do not soften or invent variations.
    accurate render, not a bug, and you must not fabricate values for them.
 8. **Secrets**: never commit keys, mnemonics, or tokens to any repo. APECS
    keeps them in runtime config / `.secrets/` on the ops VM.
-9. **Removed chains** (Filecoin, Polygon, Smart Bitcoin, THORChain) are not
-   supported Workspaces even though pages may still exist on disk.
+9. **Removed chains** (Binance Smart Chain, Ethereum, Tron — 2026-10-23
+   UTXO-focus removal; Filecoin, Polygon, Smart Bitcoin, THORChain — earlier)
+   are not supported Workspaces even though pages may still exist on disk.
+   The platform focuses on UTXO-based networks; Avalanche stays for its
+   Primary Network / P-Chain.
